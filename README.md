@@ -32,9 +32,9 @@ The evaluation metric used is classification accuracy, calculated as the number 
 
 ### PyTorch Implementation  
 
-Epoch [1/10], Loss: 0.3586
-Epoch [2/10], Loss: 0.3275
-Epoch [3/10], Loss: 0.1513
+Epoch [1/10], Loss: 0.3586 /
+Epoch [2/10], Loss: 0.3275 /
+Epoch [3/10], Loss: 0.1513 /
 Epoch [4/10], Loss: 0.1352
 Epoch [5/10], Loss: 0.1489
 Epoch [6/10], Loss: 0.1166
