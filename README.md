@@ -1,6 +1,6 @@
 # SSM
 
-In this repository we implement two simple S4 () model which is trained on the MINST dataset. The former uses PyTorch while the second version was built only using Numpy.
+In this repository we implement two simple S4 (Structured State Space for Sequence) models which are trained on the MINST dataset. The former uses PyTorch while the second version was built only using Numpy.
 
 # Method
 
