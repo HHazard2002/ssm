@@ -32,26 +32,26 @@ The evaluation metric used is classification accuracy, calculated as the number 
 
 ### PyTorch Implementation  
 
-Epoch [1/10], Loss: 0.3586 //
-Epoch [2/10], Loss: 0.3275 //
-Epoch [3/10], Loss: 0.1513 //
-Epoch [4/10], Loss: 0.1352
-Epoch [5/10], Loss: 0.1489
-Epoch [6/10], Loss: 0.1166
-Epoch [7/10], Loss: 0.2430
-Epoch [8/10], Loss: 0.1188
-Epoch [9/10], Loss: 0.0581
-Epoch [10/10], Loss: 0.0534
+Epoch [1/10], Loss: 0.3586 \
+Epoch [2/10], Loss: 0.3275 \
+Epoch [3/10], Loss: 0.1513 \
+Epoch [4/10], Loss: 0.1352 \
+Epoch [5/10], Loss: 0.1489 \
+Epoch [6/10], Loss: 0.1166 \
+Epoch [7/10], Loss: 0.2430 \
+Epoch [8/10], Loss: 0.1188 \
+Epoch [9/10], Loss: 0.0581 \
+Epoch [10/10], Loss: 0.0534 \
 
 Test Accuracy: 96.68%
 
 ### NumPy Implementation  
 
-Epoch [1/5], Loss: 0.5156
-Epoch [2/5], Loss: 0.2174
-Epoch [3/5], Loss: 0.1729
-Epoch [4/5], Loss: 0.1399
-Epoch [5/5], Loss: 0.1267
+Epoch [1/5], Loss: 0.5156 \
+Epoch [2/5], Loss: 0.2174 \
+Epoch [3/5], Loss: 0.1729 \
+Epoch [4/5], Loss: 0.1399 \
+Epoch [5/5], Loss: 0.1267 \
 
 Test Accuracy: 96.23%
 
