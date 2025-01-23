@@ -1,32 +1,56 @@
-# SSM
+# SSM (Structured State Space Models)
 
-In this repository we implement two simple S4 (Structured State Space for Sequence) models which are trained on the MNIST dataset. The former uses PyTorch while the second version was built only using Numpy.
+This repository contains implementations of two simple S4 (Structured State Space for Sequence) models, both trained on the MNIST dataset. The first implementation utilizes PyTorch, while the second is built entirely with NumPy.
 
-# Method
+---
 
-We base this model on the S4 structure detailed here. In the first file we make use of PyTorch's built in functions to initialise, train and evaluate our model. We use Adam as our optimiser and cross-entropy as our loss function. After testing various batch sizes (64, 128, 256) and learning rates (0.01, 0.001, 0.0005) we found that a batch size of 256 and a learning rate of 0.0005 best minimise our testing loss.
+## Methodology
 
-The dataset we use is the classic MINST dataset which is composed of ... 28x28 pixels images of digits from 0 to 9, each labelled accordingly.
+### Model Structure  
+Both models are based on the S4 structure, as detailed in [this paper](https://arxiv.org/abs/2111.00396).
 
-The aim of our model is to appropriatly classify unseen digit images. Finally, our evaluation method is simply the number of correctly classified images divided by the total number of images.
+1. **PyTorch Implementation**  
+   - Utilizes PyTorch's built-in functions for initialization, training, and evaluation.  
+   - The optimizer used is Adam, and cross-entropy is employed as the loss function.  
+   - Hyperparameter tuning involved testing batch sizes (64, 128, 256) and learning rates (0.01, 0.001, 0.0005). A batch size of 256 and a learning rate of 0.0005 were found to minimize the testing loss effectively.
 
-# Results
+2. **NumPy Implementation**  
+   - Built from scratch without the use of external deep learning frameworks.
 
-Epoch [1/5], Loss: 0.3586
-Epoch [2/5], Loss: 0.3275
-Epoch [3/5], Loss: 0.1513
-Epoch [4/5], Loss: 0.1352
-Epoch [5/5], Loss: 0.1489
-Epoch [6/5], Loss: 0.1166
-Epoch [7/5], Loss: 0.2430
-Epoch [8/5], Loss: 0.1188
-Epoch [9/5], Loss: 0.0581
-Epoch [10/5], Loss: 0.0534
+### Dataset  
+The models were trained on the MNIST dataset, a classic benchmark dataset consisting of grayscale 28x28-pixel images of digits (0–9), each labeled with its corresponding digit.
 
+The goal of the models is to accurately classify unseen digit images.
 
-Epoch 1/5, Loss: 0.5155643616332608
-Epoch 2/5, Loss: 0.21744363777599113
-Epoch 3/5, Loss: 0.172894513521342
-Epoch 4/5, Loss: 0.1398888802354398
-Epoch 5/5, Loss: 0.12673826988745282
+### Evaluation  
+The evaluation metric used is classification accuracy, calculated as the number of correctly classified images divided by the total number of images in the test set.
+
+---
+
+## Results  
+
+### PyTorch Implementation  
+
+Epoch [1/10], Loss: 0.3586
+Epoch [2/10], Loss: 0.3275
+Epoch [3/10], Loss: 0.1513
+Epoch [4/10], Loss: 0.1352
+Epoch [5/10], Loss: 0.1489
+Epoch [6/10], Loss: 0.1166
+Epoch [7/10], Loss: 0.2430
+Epoch [8/10], Loss: 0.1188
+Epoch [9/10], Loss: 0.0581
+Epoch [10/10], Loss: 0.0534
+
+Test Accuracy: 96.68%
+
+### NumPy Implementation  
+
+Epoch [1/5], Loss: 0.5156
+Epoch [2/5], Loss: 0.2174
+Epoch [3/5], Loss: 0.1729
+Epoch [4/5], Loss: 0.1399
+Epoch [5/5], Loss: 0.1267
+
+Test Accuracy: 96.23%
 
