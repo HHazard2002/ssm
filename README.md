@@ -1,6 +1,6 @@
 # SSM (Structured State Space Models)
 
-This repository contains implementations of two simple S4 (Structured State Space for Sequence) models, both trained on the MNIST dataset. The first implementation utilizes PyTorch, while the second is built entirely with NumPy.
+This repository contains implementations of two simple S4 (Structured State Space for Sequence) models, both trained on the MNIST dataset. The first implementation uses PyTorch, while the second is built entirely with NumPy.
 
 ---
 
@@ -10,12 +10,13 @@ This repository contains implementations of two simple S4 (Structured State Spac
 Both models are based on the S4 structure, as detailed in [this paper](https://arxiv.org/abs/2111.00396).
 
 1. **PyTorch Implementation**  
-   - Utilizes PyTorch's built-in functions for initialization, training, and evaluation.  
-   - The optimizer used is Adam, and cross-entropy is employed as the loss function.  
-   - Hyperparameter tuning involved testing batch sizes (64, 128, 256) and learning rates (0.01, 0.001, 0.0005). A batch size of 256 and a learning rate of 0.0005 were found to minimize the testing loss effectively.
+   - Uses PyTorch's built-in functions for initialisation, training, and evaluation.  
+   - The optimiser used is Adam, and cross-entropy is employed as the loss function.  
+   - Hyperparameter tuning involved testing batch sizes (64, 128, 256) and learning rates (0.01, 0.001, 0.0005). A batch size of 256 and a learning rate of 0.0005 were found to minimise the testing loss effectively.
 
 2. **NumPy Implementation**  
    - Built from scratch without the use of external deep learning frameworks.
+   - We used the same hyperparameters as previously (batch size of 256 and learning rate of 0.0005).
 
 ### Dataset  
 The models were trained on the MNIST dataset, a classic benchmark dataset consisting of grayscale 28x28-pixel images of digits (0–9), each labeled with its corresponding digit.
